@@ -271,22 +271,16 @@
     </a>
   </header>
 
-  <!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/mdklnngd"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <section id="contacto-web" class="container" style="padding:40px 0; text-align:center;">
+  <h3>Escribime directamente</h3>
+  <form action="https://formspree.io/f/xdaknqed" method="POST" style="max-width:500px; margin:auto; display:grid; gap:12px;">
+    <input type="text" name="nombre" placeholder="Tu nombre" required style="padding:12px; border-radius:8px; border:1px solid #ccc;">
+    <input type="email" name="email" placeholder="Tu correo" required style="padding:12px; border-radius:8px; border:1px solid #ccc;">
+    <textarea name="mensaje" placeholder="Escribe tu consulta aquí..." required rows="5" style="padding:12px; border-radius:8px; border:1px solid #ccc;"></textarea>
+    <button type="submit" class="cta-btn">Enviar mensaje</button>
+  </form>
+</section>
   
 </body>
 </html>
