@@ -271,7 +271,11 @@
     </a>
   </header>
 
-  <audio autoplay loop hidden>
+<button onclick="document.getElementById('musica').play()" style="padding:10px 20px; border:none; border-radius:8px; background:#007BFF; color:#fff; cursor:pointer;">
+  ▶ Reproducir música
+</button>
+
+<audio id="musica" loop>
   <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Scott_Holmes_Music/Electronic_Vibes/Scott_Holmes_Music_-_03_-_Driven_To_Success.mp3" type="audio/mpeg">
   Tu navegador no soporta audio.
 </audio>
